@@ -16,5 +16,28 @@ namespace New_folder
         public int Age{get; set;}
         public Boolean IsGraduated{get; set;}
         public string FullName{get; set;}
+    
+        public Member() { }
+        public Member(
+            string FirstName,
+            string LastName,
+            string Gender,
+            DateTime DateOfBirth,
+            string PhoneNumber,
+            string BirthPlace,
+            int Age,
+            bool IsGraduated
+            )
+            
+        {
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+            this.Gender = Gender;
+            this.DateOfBirth = DateOfBirth;
+            this.PhoneNumber = PhoneNumber;
+            this.BirthPlace = BirthPlace;
+            this.Age = Age;
+            this.IsGraduated = IsGraduated;
+        }    
     }
-    }
+}
